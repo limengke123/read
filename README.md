@@ -1,8 +1,8 @@
 # read
 爬http://geek.csdn.net/的列表，server用的koa2,前端用react。
-##install
+# install
 npm i
-##打包
+# 打包
 npm run build
-##start
+# start
 npm run start
