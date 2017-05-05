@@ -12,8 +12,10 @@ export default class head extends React.Component{
     }
     render(){
         return(
-            <header className="head">
-                test to learn
+            <header>
+                <div className="read-header">
+                    Read
+                </div>
             </header>
         )
     }

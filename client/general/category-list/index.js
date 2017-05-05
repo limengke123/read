@@ -20,25 +20,28 @@ export default class CategoryList extends React.Component {
         }
     }
 
-    selectCategory(e){
+    selectCategory(e) {
         e.preventDefault();
         e.stopPropagation();
-
-
-
     }
+
 
     render() {
         return (
-            <ul className="list" onClick={this.selectCategory.bind(this)}>
-                {
-                    this.state.lists.map((listName, index) => {
-                        return (
-                            <li className="list-item" >{listName}</li>
-                        )
-                    })
-                }
-            </ul>
+            <div className="category-list">
+                <div className="lists">
+                    <ul>
+                        {
+                            this.state.lists.map((listName, index) => {
+                                return (
+                                    <li className="list-item">{listName}</li>
+                                )
+                            })
+                        }
+                    </ul>
+                </div>
+            </div>
+
         )
     }
 }

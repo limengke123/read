@@ -12,15 +12,17 @@ import SgContent from '../../contents/sg';
 import TcContent from '../../contents/tc';
 import TtContent from '../../contents/toutiao';
 
-export default class CategoryContent extends React.Component{
-    constructor(){
+export default class CategoryContent extends React.Component {
+    constructor() {
         super();
     }
 
-    render(){
-        return(
-            <div className="content">
-                <TtContent/>
+    render() {
+        return (
+            <div className="category-content">
+                <div className="content">
+                    <GeekContent/>
+                </div>
             </div>
         )
     }
